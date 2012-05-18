@@ -1,37 +1,20 @@
-#Rails Ready for Debian Lenny
+#Rails Ready for Debian Squeeze
+##Overview and invocation
 
-##Get a full Ruby on Rails stack up very fast on Debian Lenny
+A thinner variation of the railsready script adjusted to Debian Squeeze. The script aims to provide as much automation in VPS deployments for Ruby on Rails applications as possible.
+You can pass two arguments to the script, which correspondingly denote the version and patch of the desired Ruby environment. 
+If you want to use the newest version available you can always check http://www.ruby-lang.org for information. At the time of writing the current version was 1.9.2-p194 and you can see below how to invoke the script for it:
 
-UPDATE: it also works for Debian 6.0x Squeeze
+**./railsready-debian-squeeze.sh RUBY_VERSION RUBY_PATCH**, for example:
 
-This project is inspired by https://github.com/joshfng/railsready/ by Joshua Frye which refers to Ubuntu Server 10.04 LTS. Check it out!
+**./railsready-debian-squeeze.sh 1.9.3 194**
 
-##Run this on a fresh Debian Lenny install.
+Below is an expanded command which will get you going:
 
-##To run
-  * `wget --no-check-certificate https://github.com/vysogot/railsready-debian-lenny/raw/master/railsready-debian-lenny.sh && bash railsready-debian-lenny.sh`
-  * If you want to watch the install log run `tail -f ~/rails_install.log` in a next shell (ALT+<F2-F6> for non-gui)
+wget --no-check-certificate https://raw.github.com/tomasz-stempinski/railsready-debian-squeeze/master/railsready-debian-squeeze.sh && chmod a+x railsready-debian-squeeze.sh && ./railsready-debian-squeeze.sh **1.9.3 194**
 
-##What this gives you?
 
-In order of being installed:
 
-  * an updated system with necessary packages
-  * SQLite3 from lenny-backports
-  * imagemagick
-  * git-core
-  * RVM
-  * Ruby 1.9.2-p136 on RVM
-  * Configure Ruby for Debian
-  * Bundler, Passenger, and Rails gems
-  * Apache + Phusion Passenger slightly configured
+##Acknowledgement
+Big thanks to Jakub Godawa (vysogot) for providing his version of the configuration script!
 
-##What you should do by yourself?
-
-  * Create new rails appliaction
-  * Configure Apache virtual host that points to it
-  * Browse the app :)
-
-Please note: If you are running on a super slow connection your sudo session may timeout and you'll have to enter your password again.
-
-I use this to setup VMs. For any suggestions: jakub.godawa@gmail.com
