@@ -67,6 +67,9 @@ echo " * Ruby $ruby_version_patch on RVM"
 echo " * libs needed to run Rails (postgres, etc.)"
 echo " * Bundler, Passenger, pg, and Rails gems"
 echo " * Git"
+echo " * Memcache"
+echo " * MongoDB"
+echo " * Sphinx"
 echo "Make sure you got it from https://github.com/tomasz-stempinski/railsready-debian-squeeze"
 
 # Update the system before going any further
@@ -100,6 +103,21 @@ echo "==> done..."
 # Install git-core
 echo -e "\n=> Installing git..."
 sudo apt-get -y install git-core >> $log_file 2>&1
+echo "==> done..."
+
+# Install memcache
+echo -e "\n=> Installing git..."
+sudo apt-get -y install memcache >> $log_file 2>&1
+echo "==> done..."
+
+# Install MongoDB
+echo -e "\n=> Installing git..."
+sudo apt-get -y install mongodb >> $log_file 2>&1
+echo "==> done..."
+
+# Install Sphinx
+echo -e "\n=> Installing git..."
+sudo apt-get -y install sphinx >> $log_file 2>&1
 echo "==> done..."
 
 # Install RVM

@@ -13,7 +13,8 @@ Below is an expanded command which will get you going:
 
 wget --no-check-certificate https://raw.github.com/tomasz-stempinski/railsready-debian-squeeze/master/railsready-debian-squeeze.sh && chmod a+x railsready-debian-squeeze.sh && ./railsready-debian-squeeze.sh **1.9.3 194**
 
-
+##Additional packages
+The script has been updated to install memcache, MongoDB and Sphinx.
 
 ##Acknowledgement
 Big thanks to Jakub Godawa (vysogot) for providing his version of the configuration script!
