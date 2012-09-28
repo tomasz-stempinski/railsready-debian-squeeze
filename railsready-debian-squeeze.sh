@@ -70,6 +70,7 @@ echo " * Git"
 echo " * Memcache"
 echo " * MongoDB"
 echo " * Sphinx"
+echo " * QT development libraries "
 echo "Make sure you got it from https://github.com/tomasz-stempinski/railsready-debian-squeeze"
 
 # Update the system before going any further
@@ -118,6 +119,11 @@ echo "==> done..."
 # Install Sphinx
 echo -e "\n=> Installing git..."
 sudo apt-get -y install sphinx >> $log_file 2>&1
+echo "==> done..."
+
+# Install QT
+echo -e "\n=> Installing git..."
+sudo apt-get install libqt4-dev
 echo "==> done..."
 
 # Install RVM
