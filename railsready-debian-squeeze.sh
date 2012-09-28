@@ -102,27 +102,27 @@ postgresql-client postgresql-server-dev-all >> $log_file 2>&1
 echo "==> done..."
 
 # Install git-core
-echo -e "\n=> Installing git..."
+echo -e "\n=> Installing git-core..."
 sudo apt-get -y install git-core >> $log_file 2>&1
 echo "==> done..."
 
 # Install memcache
-echo -e "\n=> Installing git..."
+echo -e "\n=> Installing memcache..."
 sudo apt-get -y install memcache >> $log_file 2>&1
 echo "==> done..."
 
 # Install MongoDB
-echo -e "\n=> Installing git..."
+echo -e "\n=> Installing MongoDB..."
 sudo apt-get -y install mongodb >> $log_file 2>&1
 echo "==> done..."
 
 # Install Sphinx
-echo -e "\n=> Installing git..."
+echo -e "\n=> Installing Sphinx..."
 sudo apt-get -y install sphinx >> $log_file 2>&1
 echo "==> done..."
 
 # Install QT
-echo -e "\n=> Installing git..."
+echo -e "\n=> Installing QT..."
 sudo apt-get install libqt4-dev
 echo "==> done..."
 
