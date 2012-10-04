@@ -20,7 +20,7 @@ echo "==> done..."
 
 # Install apache-passenger
 gem_dir=/home/$script_runner/.rvm/gems
-rm -rf "$gem_dir/cache"
+sudo rm -rf "$gem_dir/cache"
 ruby_dir_full=`find $gem_dir/$ruby_dir* -maxdepth 0 -type d | head -1`
 passenger_dir=`find $ruby_dir_full/gems/passenger* -maxdepth 0 -type d | head -1`
 echo "Gem dir: $gem_dir"
