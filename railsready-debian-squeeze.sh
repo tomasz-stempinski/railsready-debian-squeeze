@@ -118,7 +118,7 @@ echo "==> done..."
 
 # Install Sphinx
 echo -e "\n=> Installing Sphinx..."
-sudo apt-get -y install sphinx >> $log_file 2>&1
+sudo apt-get -y install sphinxsearch >> $log_file 2>&1
 echo "==> done..."
 
 # Install QT
